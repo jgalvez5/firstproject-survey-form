@@ -1,0 +1,153 @@
+** start of undefined **
+
+<!DOC html>
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1 id="title" class="text-center">GR Inversiones Survey Form</h1>
+      <p id="description">Thank you for taking the time to help us improve</p>
+      </header>
+    <form id="survey-form">
+      <div class="form-group">
+        <label id="name-label">Name: <input id="name" type="text" required placeholder="Enter your name"></input></label>
+        </div>
+        <div class="form-group">
+        <label id="email-label">Email :<input id="email" type="email" required placeholder="Enter your email address"</input></label>
+        </div>
+        <div class="form-group">
+        <label id="number-label">Age (optional): <input id="number" type="number" required placeholder="Enter your age" min="18" max="90"></input></label>
+        </div>
+      <div class="form-group">
+      <p>How did you hear about us?</p>
+      <select id="dropdown">
+        <option value="">(select one)</option>
+        <option value="1">Facebook</option>
+        <option value="2">Instagram</option>
+        <option value="3">Recommendation from someone</option>
+        <option value="4">Other</option>
+      </select>
+      <div class="form-group">
+        <p>Would you recommend GR Inversiones to a friend?</p>
+          <label><input type="radio" name="recommend-button" class="inline" required value="Definitely" checked></input>  Definitely</label>
+          <label><input type="radio" name="recommend-button" class="inline" required value="Maybe">
+          </input>Maybe</label>
+          <label><input type="radio" name="recommend-button" class="inline" required value="No"></input>No</label>
+          </div>
+      <div class="form-group">
+        <p>What types of properties are you more interested in?</p>
+        <input id="houses" type="checkbox" name="interests" value="houses" checked><label for="houses">Houses</label>
+        <input id="apartments" type="checkbox" name="interests" value="apartments"><label for="apartments">Apartments</label>
+        <input id="lots" type="checkbox" name="interests" value="lots-one"><label for="lots-one">Lots (built)</label>
+        <input id="lots-two" type="checkbox" name="interests" value="lots-two"><label for="lots=two">Lots (not built)</label>
+      </div>
+      <div type="form-group">
+        <p>Comments or suggestions:</p>
+        <label>
+          <textarea name="feedback" rows="3" columns="30" placeholder="Enter your comments here..."></textarea>
+          </label>
+      <div type="form-group">
+        <button type="submit" value="Submit" class="submit-button" id="submit">Submit </button>
+      </div>
+    </form>
+</body>
+</html>
+
+          
+
+
+
+
+
+** end of undefined **
+
+** start of undefined **
+
+body {
+  font-family: "Arial";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+h1, p{
+  margin: 1em auto;
+  text-align: center;
+}
+
+div{
+  display: block;
+}
+
+.form-group {
+  margin: 0 auto 1.25rem auto;
+  padding: 0.25rem;
+}
+
+form {
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding: auto;
+}
+
+label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+input, select, textarea {
+  margin: 10px 0 0 0;
+  width: 50%;
+  min-height: 1em;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 60%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: #3b3b4f;
+  border-color: white;
+  min-width: 300px;
+}
+
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+
+input, textarea {
+  background-color: #0a0a23;
+  border: 1px solid #0a0a23;
+  color: #ffffff;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background-color: #1b1b32;
+	color: #f5f6f7;
+  font-family: Tahoma;
+	font-size: 16px;
+}
+
+html {
+  display: block;
+}
+
+.container{
+  width: 100%;
+  max-width: 720px;
+  margin: 3.125rem auto 0 auto;
+}
+
+** end of undefined **
+

@@ -1,0 +1,47 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+  <link rel="stylesheet" href="styles.css"></html>
+  <head> 
+    <meta charset="utf-8"></meta>
+  <main id="main">
+    <body>
+    <title id="title">Dr. Norman Borlaug</title>
+    <h1 id="header">Dr. Norman Borlaug</h1>
+    <p>The man who saved hundreds of lives</p>
+    <div id="img-div">
+      <img id="image" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute-page-main-image.jpg"></img>
+      <figcaption id="img-caption">Dr. Norman Borlaug, third from the left, trains biologists in Mexico on how to increase wheat yields - part of his life-long war on hunger.</figcaption>
+    </div>
+      <section id="tribute-info">
+        <h3> Dr. Borlaug's Bio</h3>
+        <p>Dr. Borlaug was a medical professional who saved hundreds of lives. Born in Germany, he travelled the world looking to help as many people as he could</p>
+        <h3>
+        </section>
+      <h3> If you have time, please read more about Dr. Borlaug's amazing life <a href="https://en.wikipedia.org/wiki/Norman_Borlaug"  id="tribute-link" target="_blank">here.</a></h3>
+  </main>
+  </body>
+  </html>
+
+
+** end of undefined **
+
+** start of undefined **
+
+h1, p {
+  text-align: center;
+}
+
+figcaption {
+  padding-top: 10px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+** end of undefined **
+

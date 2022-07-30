@@ -1,0 +1,270 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+<body>
+  <div id="page-wrapper">
+    <header id="header">
+      <div class="logo">
+        <img id="header-img" src="https://scontent-mia3-1.xx.fbcdn.net/v/t1.6435-9/31749476_1601361759983535_7629984018087280640_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=rjKAkcoaoBsAX_7-mwM&_nc_ht=scontent-mia3-1.xx&oh=00_AT94DJBzz5JHwR8m4YRZKgALLp2fOm5_E-GqN2-4kdrFbA&oe=630C5BFE"></img>
+      </div>
+      <nav id="nav-bar">
+        <ul>
+          <li><a class="nav-link" href="#who-we-are">Who We Are</a></li>
+          <li><a class="nav-link" href="#why-work-with-us">Why Work With Us</a></li>
+          <li><a class="nav-link" href="#about-el-encanto">About El Encanto</a></li>
+        </ul>
+       </nav>
+</header>
+<div class="container"></div>
+<section id="more-info">
+  <h2>For more information about El Encanto or our other rental properties please enter your email here: </he>
+  <form id="form" action="https://www.freecodecamp.com/email-submit">
+  <input id="email" type="email" name="email" placeholder="Enter your email address" required></input>
+  <input id="submit" type="submit" value="Find Out More" class="btn"></input>
+  </form>
+</section>
+<div class="container">
+  <section id="who-we-are">
+    <div class="grid">
+      <h2>Who We Are</h2>
+      <p>We are your real estate advisors!
+         We work to provide you with the best real estate options available in El Salvador.
+      </p>
+    </div>
+</section>
+<section id="why-work-with-us">
+  <div class="grid">
+    <h2>Why Work With Us?</h2>
+    <p>We have over 15 years of experience helping clients find their dream home!</p>
+    <div class="container"></div>
+    <p>We have provide a wide arrange of services such as: </p>
+    <ul>
+      <li>Corporate Real Estate Consulting</li>
+      <li>
+Legal and Financial Advisory</li>
+<li>Real Estate Management</li>
+</ul></div></section>
+<section id="about-el-encanto">
+  <h2>About El Encanto</h2>
+  <p>A project in constant evolution that provides a unique living experience of the highest level in El Salvador.
+A concept that combines the exclusivity of a country club, the entertainment of a golf course designed by Dye Designs, outdoor sports, and the luxury of living surrounded by nature.
+
+Discover a new style of life in a community, within a cutting-edge setting seamlessly integrated into a natural environment. Find out more about it here: </p>
+<iframe id="video" height="315" src="https://www.youtube.com/watch?v=sruIhNO5bok" frameborder="0" allowfullscreen>
+<footer>
+  <span>Copyright 2020, GR Inversiones</span></footer>
+  </div>
+  </div>
+  </body>
+  </html>
+
+
+    
+
+** end of undefined **
+
+** start of undefined **
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #eee;
+  font-family: 'Lato', sans-serif;
+}
+
+#page-wrapper {
+  position: relative;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: #000;
+}
+
+.container {
+  max-width: 1000px;
+  width: 100;
+  margin: 0 auto;
+}
+
+.btn {
+  padding: 0 20px;
+  height: 40px;
+  font-size: 1em;
+  font-weight: 900;
+  text-transform: uppercase;
+  border: 3px black solid;
+  border-radius: 2px;
+  background: transparent;
+  cursor: pointer;
+}
+
+.grid {
+  display: flex;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  min-height: 75px;
+  padding: 0px 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #eee;
+}
+
+@media (max-width: 600px) {
+  header {
+    flex-wrap: wrap;
+  }
+}
+
+.logo {
+  width: 60vw;
+}
+
+@media (max-width: 650px) {
+  .logo {
+    margin-top: 15px;
+    width: 100%;
+    position: relative;
+  }
+}
+
+.logo > img {
+  width: 100%;
+  height: 100%;
+  max-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 20px;
+}
+
+@media (max-width: 650px) {
+  .logo > img {
+    margin: 0 auto;
+  }
+}
+
+nav {
+  font-weight: 400;
+}
+
+@media (max-width: 650px) {
+  nav{
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 50px;
+  }
+  nav li {
+    padding-bottom: 5px;
+  }
+}
+
+nav > ul {
+  width: 35vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+@media (max-width: 650px) {
+  nav > ul {
+    flex-direction: column;
+  }
+}
+
+#more-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 200px;
+  margin-top: 50px;
+}
+
+#more-info > h2 {
+  margin-bottom: 20px;
+  word-wrap: break-word;
+}
+
+#more-info input[type='email'] {
+  max-width: 275px;
+  width: 100%;
+  padding: 5px;
+}
+
+#more-info[type='submit'] {
+  max-width: 150px;
+  width: 100%;
+  height: 30px;
+  margin: 15px 0;
+  border: 0;
+  background-color: #f1c40f;
+}
+
+#more-info[type='submit']:hover {
+  background-color: orange;
+  transition: background-color 1s;
+}
+
+@media (max-width: 650px) {
+  #more-info {
+    margin-top: 120px;
+  }
+}
+
+#who-we-are, #why-work-with-us, #about-el-encanto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 125px;
+  width: 80vw;
+  padding: 5px;
+}
+
+@media (max-width: 550px) {
+  #who-we-are, #why-work-with-us, #about-el-encanto {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    height: 150px;
+  }
+}
+
+footer {
+  margin-top: 30px;
+  background-color: #ddd;
+  padding: 20px;
+}
+
+footer > span {
+  margin-top: 5px;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 0.9em;
+  color; #444;
+}
+
+** end of undefined **
+
